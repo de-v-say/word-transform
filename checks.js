@@ -10,8 +10,6 @@ assert.equal(is_converted('абаб ааах'), '0');
 assert.equal(is_converted('трансформатор гшлнсфешмлгеш'), '1');
 assert.equal(is_converted('достопримечательность йфсгфпкимечагелынфсгы'), '1');
 assert.equal(is_converted('северянин срврряииг'), '0');
-assert.equal(is_converted('достопримечательность йфсгфпкимечагелынфсгы'), '1');
-assert.equal(is_converted('достопримечательность йфсгфпкимечагелынфсгы'), '1');
 assert.equal(is_converted('дверь дрова'), '1');
 assert.equal(is_converted('дверь дров'), '0');
 
