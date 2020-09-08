@@ -47,9 +47,9 @@ rl.on('line', (line) => {
     let vocabulary = new Map();
 
     for (let i = 0; i < startWord.length; i++) {
-      if (vocabulary.has(startWord[i]) == false) {
+      if (!vocabulary.has(startWord[i])) {
         vocabulary.set(startWord[i], endWord[i]);
-      } else if (vocabulary.has(startWord[i]) != endWord[i]) {
+      } else if (vocabulary.get(startWord[i]) != endWord[i]) {
         return 0;
       }
     }
